@@ -1,19 +1,15 @@
 ---
-title: Il mio sito di prova
+layout: default
+title: Home
 ---
 
 # Benvenuto
 
-Questo è un **paragrafo** con testo in *corsivo* e [un link](https://github.com).
+Questo è un sito di **prova**. Guarda i nostri [progetti](/progetti/).
 
-## Una sezione
+## Ultimi articoli
 
-- Punto uno
-- Punto due
-- Punto tre
+{% for post in site.posts limit:3 %}
 
-```python
-print("blocco di codice")
-```
-
-> Una citazione qualsiasi
+- [{{ post.title }}]({{ post.url }})
+  {% endfor %}
