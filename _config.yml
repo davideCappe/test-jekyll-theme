@@ -1,11 +1,11 @@
 title: Officina Digitale
 description: Un sito di prova per capire Jekyll
-url: "https://tuonome.github.io"
-baseurl: ""
+url: "https://davidecappe.github.io"
+baseurl: "/test-jekyll-theme"
 author: Davide
 social:
-  twitter: your_twitter
-  github: your_github
+  twitter: davidecappe
+  github: davidecappe
 
 plugins:
   - jekyll-feed
