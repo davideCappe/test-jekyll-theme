@@ -13,7 +13,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate-v2
 
-paginate: 5
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/blog/:num/"
+  title: ":title - page :num"
+  trail: 2
 markdown: kramdown
 kramdown:
   input: GFM
