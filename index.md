@@ -16,7 +16,7 @@ title: Home
   <div class="cards">
     {% for post in site.posts limit:3 %}
     <article class="card">
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="meta">{{ post.date | date: "%d %B %Y" }} • {% for t in post.tags %}<span class="tag">{{ t }}</span>{% endfor %}</p>
       <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
     </article>
@@ -28,7 +28,7 @@ title: Home
   <h2>Progetti in evidenza</h2>
   <ul class="projects">
     {% for p in site.progetti limit:3 %}
-      <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
     {% endfor %}
   </ul>
 </section>

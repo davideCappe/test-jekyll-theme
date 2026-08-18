@@ -7,7 +7,7 @@ title: Progetti
   <h1>Progetti</h1>
   <ul>
     {% for p in site.progetti %}
-      <li><a href="{{ p.url }}">{{ p.title }}</a> — {{ p.excerpt | strip_html | truncate: 120 }}</li>
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> — {{ p.excerpt | strip_html | truncate: 120 }}</li>
     {% endfor %}
   </ul>
 </div>
