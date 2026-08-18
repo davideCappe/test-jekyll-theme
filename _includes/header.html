@@ -1,8 +1,16 @@
 <!-- header.html -->
-<header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/chi-siamo/' | relative_url }}">Chi siamo</a>
-    </nav>
+<header class="site-header">
+    <div class="wrap">
+        <div class="brand">
+            <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+            <p class="tagline">{{ site.description }}</p>
+        </div>
+        <nav class="main-nav">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/blog/' | relative_url }}">Blog</a>
+            <a href="{{ '/progetti/' | relative_url }}">Progetti</a>
+            <a href="{{ '/chi-siamo/' | relative_url }}">Chi siamo</a>
+            <a href="{{ '/team/' | relative_url }}">Team</a>
+        </nav>
+    </div>
 </header>

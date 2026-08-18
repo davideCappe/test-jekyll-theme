@@ -1,4 +1,12 @@
 <!-- footer.html -->
-<footer>
-    <p>© 2026 {{ site.author }} — sito generato con Jekyll</p>
+<footer class="site-footer">
+    <div class="wrap">
+        <div>
+            <p>© 2026 {{ site.author }} — sito generato con Jekyll</p>
+        </div>
+        <div class="links">
+            <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+            <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>
+        </div>
+    </div>
 </footer>
